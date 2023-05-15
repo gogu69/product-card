@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+
+    body {
+      background-color: hsl(30, 38%, 92%);
+    }
+
+/*
+  .main{
+      background-color: white;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 300px;
+      width: 500px;
+      border-radius: 10px;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+    }
+*/
+main {
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 500px;
+  
+  
+}
+
+.picture{
+  flex: 1;
+}
+
+img {
+  width: 250px;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+}
+
+.text {
+  flex: 1;
+  background-color: white;
+  border-radius: 0 20px 20px 0;
+  padding: 20px;
+}
+
+.newPrice{
+  color: green;
+  font-weight: 700;
+  font-size: 30px;
+  vertical-align: middle;
+}
+.oldPrice{
+  vertical-align: middle;
+}
+
+btn {
+  border-radius: 10px;
+  
+  background-color: green;
+  padding: 5px;
+
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<main>
+  <div class="picture">
+    <img src = "images/image-product-desktop.jpg">
+  </div>
+  <div class="text">
+    <div class="description">Preview
+
+    <h1>Gabrielle Essence Eau De Parfum</h1>
+  
+    <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+    Perfumer-Creator for the House of CHANEL.</p>
+    </div>
+    <div class="prices">
+    <span class="newPrice"> $149.99 </span><span class="oldPrice"> $169.99 </span>
+    </div>
+    <btn>Add to Cart</btn>
+    
+  </div>
+
+</main>
+</body>
+</html>
