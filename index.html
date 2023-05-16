@@ -18,35 +18,19 @@
       background-color: hsl(30, 38%, 92%);
     }
 
-/*
-  .main{
-      background-color: white;
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      height: 300px;
-      width: 500px;
-      border-radius: 10px;
-      transform: translate(-50%, -50%);
-      display: flex;
-      justify-content: center;
-    }
-*/
+
 main {
   position:absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  width: 500px;
-  
-  
+  width: 40rem;
 }
 
-
 img {
-  height: 400px;
+  max-width: 20rem;
+  display: block;
   object-fit: cover;
   border-radius: 20px 0 0 20px;
   flex: 1;
@@ -56,14 +40,14 @@ img {
   flex: 1;
   background-color: white;
   border-radius: 0 20px 20px 0;
-  padding: 20px;
+  padding: 10px 20px 10px 20px;
 
 }
 
 .newPrice{
   color: hsl(158, 36%, 37%);
   font-weight: 700;
-  font-size: 25px;
+  font-size: 2rem;
   vertical-align: middle;
   font-family: Fraunces;
 }
@@ -77,14 +61,27 @@ btn {
   border-radius: 10px;
   font-family: Montserrat;
   font-weight: 700;
-  background-color: green;
-  padding: 5px 20px 5px 20px;
+  background-color: hsl(158, 36%, 37%);
+  padding: 10px;
   text-align: center;
   color: white;
+  display: block;
+  cursor: pointer;
+}
+
+btn:hover {
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-weight: 700;
+  background-color: hsl(158, 36%, 15%);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  display: block;
 }
 
 p {
-  font-size: 14px;
+  font-size: 1rem;
   font-family: Montserrat;
   font-weight: 500;
   color: hsl(228, 12%, 48%);
@@ -96,11 +93,89 @@ p {
 
 h1{
   font-family: Fraunces;
-  font-weight: 700px;
+  font-weight: 800;
+  font-size: 2.5rem;
 }
 
 .prices {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 375px) {
+  main {
+  display: block;
+  width: auto;
+  margin: auto 0;
+}
+
+img {
+  height: 300px;
+  width: 320px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  display: block;
+}
+
+.text {
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+  
+  padding: 15px;
+}
+
+.newPrice{
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  font-size: 2rem;
+  vertical-align: middle;
+  font-family: Fraunces;
+}
+.oldPrice{
+  vertical-align: middle;
+  font-family: Fraunces;
+  color: hsl(228, 12%, 48%);
+}
+
+btn {
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-weight: 700;
+  background-color: hsl(158, 36%, 37%);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  
+  cursor: pointer;
+}
+
+btn:hover {
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-weight: 700;
+  background-color: hsl(158, 36%, 15%);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  
+}
+
+p {
+  font-size: 1rem;
+  font-family: Montserrat;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+
+
+h1{
+  font-family: Fraunces;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.prices {
+  margin-bottom: 1rem;
+}
 }
 </style>
 </head>
@@ -122,7 +197,6 @@ h1{
     <span class="newPrice"> $149.99 </span><span class="oldPrice"> $169.99 </span>
     </div>
     <btn><i class='fa fa-shopping-cart'></i> Add to Cart</btn>
-    
   </div>
 
 </main>
