@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -10,13 +10,13 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fraunces">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
   <style>
 
 
-    body {
-      background-color: hsl(30, 38%, 92%);
-    }
+body {
+  background-color: hsl(30, 38%, 92%);
+}
 
 
 main {
@@ -24,36 +24,36 @@ main {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 40%;
+  min-width: 800px;
   display: flex;
-  width: 40rem;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 img {
-  max-width: 20rem;
-  display: block;
-  object-fit: cover;
-  border-radius: 20px 0 0 20px;
   flex: 1;
+  max-height: 400px;
+  object-fit: cover;
 }
 
 .text {
   flex: 1;
   background-color: white;
-  border-radius: 0 20px 20px 0;
   padding: 10px 20px 10px 20px;
-
 }
 
 .newPrice{
   color: hsl(158, 36%, 37%);
+  font-family: Fraunces;
   font-weight: 700;
   font-size: 2rem;
   vertical-align: middle;
-  font-family: Fraunces;
+  
 }
 .oldPrice{
-  vertical-align: middle;
   font-family: Fraunces;
+  vertical-align: middle;
   color: hsl(228, 12%, 48%);
 }
 
@@ -94,111 +94,59 @@ p {
 h1{
   font-family: Fraunces;
   font-weight: 800;
-  font-size: 2.5rem;
+  font-size: 2.5em;
 }
 
 .prices {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   main {
+  margin: 0 auto;
   display: block;
-  width: auto;
-  margin: auto 0;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
 }
 
 img {
-  height: 300px;
-  width: 320px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-  display: block;
+  width: 50%;
 }
-
 .text {
   background-color: white;
-  border-radius: 0 0 10px 10px;
-  
-  padding: 15px;
+  padding: 0;
 }
-
-.newPrice{
-  color: hsl(158, 36%, 37%);
-  font-weight: 700;
-  font-size: 2rem;
-  vertical-align: middle;
-  font-family: Fraunces;
-}
-.oldPrice{
-  vertical-align: middle;
-  font-family: Fraunces;
-  color: hsl(228, 12%, 48%);
-}
-
-btn {
-  border-radius: 10px;
-  font-family: Montserrat;
-  font-weight: 700;
-  background-color: hsl(158, 36%, 37%);
-  padding: 10px;
-  text-align: center;
-  color: white;
-  
-  cursor: pointer;
-}
-
-btn:hover {
-  border-radius: 10px;
-  font-family: Montserrat;
-  font-weight: 700;
-  background-color: hsl(158, 36%, 15%);
-  padding: 10px;
-  text-align: center;
-  color: white;
-  
-}
-
-p {
-  font-size: 1rem;
-  font-family: Montserrat;
-  font-weight: 500;
-  color: hsl(228, 12%, 48%);
-}
-
 
 h1{
   font-family: Fraunces;
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 1em;
 }
 
-.prices {
-  margin-bottom: 1rem;
-}
 }
 </style>
 </head>
 <body>
-<main>
-  <div class="picture">
+  <main>
+    
     <img src = "images/image-product-desktop.jpg">
-  </div>
-  <div class="text">
-    <div class="description">
-    <p class="upper">Preview</p>
-
-    <h1>Gabrielle Essence Eau De Parfum</h1>
   
-    <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-    Perfumer-Creator for the House of CHANEL.</p>
-    </div>
-    <div class="prices">
-    <span class="newPrice"> $149.99 </span><span class="oldPrice"> $169.99 </span>
-    </div>
-    <btn><i class='fa fa-shopping-cart'></i> Add to Cart</btn>
-  </div>
+    <div class="text">
 
-</main>
+      <div>
+        <p>Preview</p>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.</p>
+      </div>
+      <div class="prices">
+        <span class="newPrice"> $149.99 </span><span class="oldPrice"> $169.99</span>
+      </div>
+
+      <btn><i class='fa fa-shopping-cart'></i> Add to Cart</btn>
+
+    </div>
+  </main>
 </body>
 </html>
