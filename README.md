@@ -1,6 +1,6 @@
 # Product card component
 
-[Design preview for the Product preview card component coding challenge](./readme/desktop-preview.jpg).
+[Design preview for the Product preview card component coding challenge](./readme/desktop-preview.png).
 
 ## Table of contents
 
@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./readme/Product-card_desk.jpg)
-![](./readme/Product-card_phone.jpg)
+![](./readme/Product-card_desk.png)
+![](./readme/Product-card_phone.png)
 
 ### Links
 - Live Site URL: https://gogu69.github.io/product-card/
