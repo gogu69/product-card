@@ -1,6 +1,6 @@
 # Product card component
 
-[Design preview for the Product preview card component coding challenge](./readme/desktop-preview.png).
+[Design preview for the Product preview card component coding challenge](./readme/product-preview.png).
 
 ## Table of contents
 
