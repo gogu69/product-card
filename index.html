@@ -43,7 +43,7 @@ img {
   padding: 10px 20px 10px 20px;
 }
 
-.newPrice{
+.newPrice {
   color: hsl(158, 36%, 37%);
   font-family: Fraunces;
   font-weight: 700;
@@ -51,8 +51,9 @@ img {
   vertical-align: middle;
   
 }
-.oldPrice{
+.oldPrice {
   font-family: Fraunces;
+  text-decoration: line-through;
   vertical-align: middle;
   color: hsl(228, 12%, 48%);
 }
@@ -82,7 +83,7 @@ btn:hover {
 
 p {
   font-size: 1rem;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: 500;
   color: hsl(228, 12%, 48%);
 }
@@ -102,26 +103,91 @@ h1{
 }
 
 @media screen and (max-width: 480px) {
-  main {
-  margin: 0 auto;
+main {
+  position: absolute;
+  left: 50%;
+  top: 2%;
+  transform: translateX(-50%);
+  width: 90%;
+  min-width: 350px;
+  background-color: aqua;
   display: block;
   border-radius: 5px;
   overflow: hidden;
-  text-align: center;
+  
+
+}
+img {
+  width: 100%;
+  max-height: 300px;
+  display: block;
+  object-fit: cover;
 }
 
-img {
-  width: 50%;
-}
 .text {
   background-color: white;
-  padding: 0;
+  padding: 10px 20px 10px 20px;
 }
 
-h1{
+h1 {
   font-family: Fraunces;
   font-weight: 800;
-  font-size: 1em;
+  font-size: 2em;
+}
+
+p {
+  font-size: 0.8rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+
+.newPrice {
+  color: hsl(158, 36%, 37%);
+  font-family: Fraunces;
+  font-weight: 700;
+  font-size: 2rem;
+  vertical-align: middle;
+  
+}
+.oldPrice {
+  font-family: Fraunces;
+  text-decoration: line-through;
+  vertical-align: middle;
+  color: hsl(228, 12%, 48%);
+}
+
+.prices {
+  margin-bottom: 2rem;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+btn {
+  border-radius: 5px;
+  font-family: Montserrat;
+  font-weight: 700;
+  background-color: hsl(158, 36%, 37%);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  display: block;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+btn:hover {
+  border-radius: 5px;
+  font-family: Montserrat;
+  font-weight: 700;
+  background-color: hsl(158, 36%, 15%);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  display: block;
+  margin-bottom: 15px;
 }
 
 }
@@ -133,9 +199,8 @@ h1{
     <img src = "images/image-product-desktop.jpg">
   
     <div class="text">
-
       <div>
-        <p>Preview</p>
+        <p class="upper">Preview</p>
         <h1>Gabrielle Essence Eau De Parfum</h1>
         <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
         Perfumer-Creator for the House of CHANEL.</p>
