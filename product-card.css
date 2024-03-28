@@ -24,7 +24,7 @@ body {
     background-color: var(--cream);
 }
 
-main {
+article {
     min-height: 100vh;
     display: grid;
     place-items: center;
@@ -35,7 +35,7 @@ main {
     background-color: var(--white);
     width: 40%;
     min-width: 600px;
-    margin:auto;
+    margin: auto;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -120,6 +120,9 @@ btn:hover {
     cursor: pointer;
 }
 
+.breadCr {
+    font-size: 1rem;
+}
 
 
 @media screen  and ( max-width: 680px ){ 
